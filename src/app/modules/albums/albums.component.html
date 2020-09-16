@@ -1,0 +1,5 @@
+<div class="flex flex-wrap items-center" infinite-scroll [infiniteScrollDistance]="scrollDistance"
+    [infiniteScrollUpDistance]="scrollUpDistance" (scrolled)="onScroll()"
+    [scrollWindow]="start < 40">
+    <app-album *ngFor="let album of albums$ | async" [album]="album"></app-album>
+</div>

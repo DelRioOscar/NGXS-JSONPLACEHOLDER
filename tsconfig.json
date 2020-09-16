@@ -2,6 +2,14 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "paths": {
+      "@interfaces/*": ["src/app/shared/interfaces/*"],
+      "@environments/*": ["src/environments/*"],
+      "@interceptors/*": ["src/app/core/interceptors/*"],
+      "@configs/*": ["src/app/configs/*"],
+      "@services/*": ["src/app/core/services/*"],
+      "@models/*": ["src/app/shared/models/*"],
+    },
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
